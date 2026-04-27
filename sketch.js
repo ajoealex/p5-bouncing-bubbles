@@ -1,6 +1,6 @@
 bubbles = [];
-canvas_width = 400;
-canvas_height = 400;
+canvas_width = 600;
+canvas_height = 600;
 
 class Bubble {
   constructor(
