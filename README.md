@@ -4,6 +4,10 @@ An interactive **p5.js bubble simulation** where bubbles bounce off walls and co
 
 Click anywhere on the canvas to spawn new bubbles with randomized movement directions.
 
+## Live Demo
+
+🚀 Try it here: https://ajoealex.github.io/p5-bouncing-bubbles/
+
 ---
 
 ## Features
@@ -11,62 +15,81 @@ Click anywhere on the canvas to spawn new bubbles with randomized movement direc
 - Dynamic bubble creation on mouse click
 - Random initial movement direction
 - Wall collision detection
-  - Left wall
-  - Right wall
-  - Top wall
-  - Bottom wall
 - Bubble-to-bubble collision detection
 - Unique auto-generated bubble IDs
-- Customizable:
+- Configurable bubble properties:
   - Radius
   - Speed
   - Color
   - Opacity
-  - Initial position
+  - Position
   - Direction
-
----
-
-## Demo Behavior
-
-When you click on the canvas:
-
-- A new bubble is created
-- It spawns at mouse coordinates
-- A random movement direction is assigned
-- It moves continuously
-- It bounces when hitting walls
-- It changes direction when colliding with other bubbles
 
 ---
 
 ## Tech Stack
 
 - JavaScript
-- p5.js
+- [p5.js](chatgpt://generic-entity?number=0)
+
+---
+
+## How It Works
+
+### Bubble Creation
+Click anywhere on the canvas:
+
+- A new bubble is created
+- It spawns at the clicked coordinates
+- A random direction is assigned
+- The bubble starts moving immediately
+
+---
+
+## Collision System
+
+### Wall Collision
+Bubbles bounce when hitting:
+
+- Left wall
+- Right wall
+- Top wall
+- Bottom wall
+
+### Bubble Collision
+When two bubbles collide:
+
+- Distance between centers is calculated
+- If overlap is detected:
+  - Directions are swapped
 
 ---
 
 ## Installation
 
-Clone the repository:
-
 ```bash
 git clone https://github.com/ajoealex/p5-bouncing-bubbles.git
-```
-
-Move into the project directory:
-
-```bash
 cd p5-bouncing-bubbles
 ```
 
-Open `index.html` in your browser.
+Then open `index.html` in your browser.
+
+---
+
+## Future Enhancements
+
+- Realistic collision physics
+- Velocity-based movement
+- Gravity simulation
+- Bubble merging
+- Touch support
+- UI controls
+- Performance optimization for large bubble counts
 
 ---
 
 ## Author
 
-Built by **Ajoe Alex**
+**Ajoe Alex**
 
 GitHub: https://github.com/ajoealex
